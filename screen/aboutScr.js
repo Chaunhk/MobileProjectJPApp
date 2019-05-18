@@ -69,6 +69,6 @@ const styles=StyleSheet.create({
     width:'80%',
     height:'60%',
     marginTop:50,
-    backgroundColor:'rgba(120, 120, 120, 0.8)',
+    backgroundColor:'rgba(255, 255, 255, 0.8)',
   }
 })

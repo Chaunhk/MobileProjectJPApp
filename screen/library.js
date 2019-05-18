@@ -86,7 +86,7 @@ var i = 0;
 	</TouchableOpacity>
 	
 	<TouchableOpacity onPress={this.getNoteArray.bind(this)}   style={styles.loadBtn}>
-		<Text style={styles.addBtnText}>G</Text>
+		<Text style={styles.loadBtnText}>GET</Text>
 	</TouchableOpacity>
 	
 	<TouchableOpacity onPress={this.addNoteEx.bind(this)} style={styles.addBtnEx}>
@@ -305,6 +305,10 @@ const styles = StyleSheet.create({
   addBtnText:{
 	  color:'#fff',
 	 fontSize:44
+  },
+   loadBtnText:{
+	  color:'#fff',
+	 fontSize:15
   },
   boxControl:{
     marginTop:20,

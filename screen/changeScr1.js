@@ -64,7 +64,7 @@ export default class App extends React.Component {
               onPress={()=> this.props.navigation.navigate('Home')} // () => this.ham()
             >
             
-              <Text style={styles.text_Center}> Home </Text>
+              <Text style={styles.text_Center}> Quay về </Text>
             </TouchableOpacity>
         </View>
         </View>
@@ -98,10 +98,11 @@ const styles = StyleSheet.create({
     borderWidth:2,
     backgroundColor:'lightgray',
     borderRadius:20,
+	
   },
   text_Center:{
   	fontSize:20,
-    textAlign:'center',
+    textAlign:'center',fontWeight:'bold',
   },
   
 });

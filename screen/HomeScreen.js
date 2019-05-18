@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   text_Center:{
     fontSize:20,
-    textAlign:'center',
+    textAlign:'center',fontWeight:'bold',
   },
   boxControl:{
     marginTop:20,
@@ -167,10 +167,7 @@ const styles = StyleSheet.create({
 
 
   },
-  controlView_About:{
-  },
-  controlView_Hint:{
-  },
+  
   controlButton:{
     width:30,
     height:30,

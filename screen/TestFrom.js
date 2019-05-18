@@ -937,11 +937,11 @@ export default class App extends React.Component {
     return (
       <ImageBackground 
           style={{flex:1, height: undefined, width: undefined}}
-          source={require('../Asset/Pic_Book_1.jpg')}
+          source={require('../Asset/Pic_Book_2.jpg')}
           >
         <View style = {{flex:1}}>
-          <View style = {{height:'5%',justifyContent: 'center',}}>
-          	<Text> Câu: {this.state.number}/5 </Text>
+          <View style = {{height:'8%',justifyContent: 'center', alignItems:'center',}}>
+          	<Text style={{fontWeight:'bold',fontSize:25}}> Câu: {this.state.number}/5 </Text>
           </View>
           <View style = {styles.boxQuest}>
           	<Text style = {{fontSize:20,textAlign:'center'}}> {this.state.check_Quest.Quest} </Text>
@@ -954,7 +954,7 @@ export default class App extends React.Component {
               onPress={()=> {this.reNewQs("A")}} // () => this.ham()
             >
             
-              <Text style={styles.textInButton}> {this.state.check_Quest.cauA} </Text>
+              <Text style={styles.textInButton}>A. {this.state.check_Quest.cauA} </Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.button}
@@ -962,7 +962,7 @@ export default class App extends React.Component {
               onPress={()=> {this.reNewQs("B")}} // () => this.ham()
             >
             
-              <Text style={styles.textInButton}> {this.state.check_Quest.cauB} </Text>
+              <Text style={styles.textInButton}>B. {this.state.check_Quest.cauB} </Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.button}
@@ -970,7 +970,7 @@ export default class App extends React.Component {
               onPress={()=> {this.reNewQs("C")}} // () => this.ham()
             >
             
-              <Text style={styles.textInButton}> {this.state.check_Quest.cauC} </Text>
+              <Text style={styles.textInButton}>C. {this.state.check_Quest.cauC} </Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.button}
@@ -978,7 +978,7 @@ export default class App extends React.Component {
               onPress={()=> {this.reNewQs("D")}} // () => this.ham()
             >
             
-              <Text style={styles.textInButton}> {this.state.check_Quest.cauD} </Text>
+              <Text style={styles.textInButton}>D. {this.state.check_Quest.cauD} </Text>
             </TouchableOpacity>
 
           </View>
@@ -1000,7 +1000,7 @@ export default class App extends React.Component {
                 onPress={()=> this.props.navigation.navigate('Test')} // () => this.ham()
               >
             
-                <Text> Out </Text>
+                <Text> Back </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -1045,7 +1045,7 @@ const styles = StyleSheet.create({
 
   },
   textInButton:{
-    fontSize:14,
+    fontSize:18,fontWeight:'bold',
   },
   boxControl:{
     flexDirection:'row',
